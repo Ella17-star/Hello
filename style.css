@@ -1,0 +1,179 @@
+
+link rel="stylesheet" href="style.css">
+
+<h1>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css">
+ </h1>
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+  min-height: 100vh;
+  color: #2d3436;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+  color: #8b4513;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  background: linear-gradient(45deg, #d4661a, #8b4513);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Container for content */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  padding: 30px;
+}
+
+/* Paragraph Styling */
+p {
+  background: rgba(255, 248, 220, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border-left: 5px solid #d4661a;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 1.1em;
+}
+
+/* Navigation Styling */
+nav {
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px;
+  background: linear-gradient(45deg, #8b4513, #d4661a);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 12px 25px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-color: white;
+}
+
+/* Bottom navigation links (for About and Contact pages) */
+body > a {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(45deg, #8b4513, #d4661a);
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+body > a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(45deg, #d4661a, #8b4513);
+}
+
+/* Recipe sections styling */
+br + br {
+  display: block;
+  margin: 10px 0;
+}
+
+/* Add some decorative elements */
+body::before {
+  content: "🍪";
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 3em;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+body::after {
+  content: "🍪";
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 3em;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1em;
+    padding: 15px;
+  }
+}
+
+/* Add some animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  animation: fadeIn 0.8s ease-in;
+}
+
+/* Special styling for contact information */
+body p:last-of-type {
+  background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
+  border-left: 5px solid #e17055;
+}
